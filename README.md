@@ -3,6 +3,7 @@ Prompts and solutions for algos in JavaScript
 
 ### Organization 📚
 
-Two separate folders: one for prompts alone, one for the solutions!
+Prompts repo contains instructions only   
+Solutions repo contains instructions AND answers (multiple versions of one answer can be included)
 
 
