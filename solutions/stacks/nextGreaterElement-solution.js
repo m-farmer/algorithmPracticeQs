@@ -17,7 +17,7 @@ console.log(nextGreater(array2)); // expect [-1, 12, 12, -1]
 function nextGreater(array) {
 
   // filling array with -1's saves a 'push' step
-  let nge = Array(array.length).fill(-1), stack = [];
+  let nge = new Array(array.length).fill(-1), stack = [];
 
   for (let i = 0; i < array.length; i++) {
     const elem = array[i];
