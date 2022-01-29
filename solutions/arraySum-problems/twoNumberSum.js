@@ -53,10 +53,10 @@ function twoNumberSumHash(array, target) {
 
 console.log(twoNumberSumHash([3, 5, -4, 8, 11, 1, -1, 6], 10));
 
-// YET ANOTHER SOLUTION using a has table
+// YET ANOTHER SOLUTION using a hash table
 // this one involves pushing the INDICES of the numbers that add up to the target
 // Which is why it needs to be specified that the value in a key-value pair could be zero or else it won't register
-// also for this Leetcode problem it was specified that there was only one correct pair.
+// also for this Leetcode problem it was specified that THERE WAS ONLY ONE CORRECT PAIR
 function twoSumHashTwo(nums, target) {
   let hash = {};
 
