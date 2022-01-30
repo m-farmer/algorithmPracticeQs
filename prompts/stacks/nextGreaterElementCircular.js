@@ -7,24 +7,6 @@ Additionally, your function should treat the input array as a circular array. A 
 
 given array = [0, 0, 5, 0, 0, 3, 0, 0] the next greater element after 3 is 5.
 
-
 */
 
-function nextGreaterElement(array) {
-  const output = new Array(array.length).fill(-1);
-	const stack = [];
-
-	for (let i = 0; i < 2 * array.length; i++) {
-    // using mod to accommodate indices once we go beyond the end of the array
-		const circularIdx = i % array.length;
-
-    // for some reason cannot assign array[stack[stack.length-1]] to variables
-		while(stack.length > 0 && array[stack[stack.length-1]] < array[circularIdx]) {
-			const top= stack.pop();
-			output[top] = array[circularIdx];
-		}
-		stack.push(circularIdx);
-	}
-	return output;
-}
 
