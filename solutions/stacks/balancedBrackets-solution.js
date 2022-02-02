@@ -62,10 +62,8 @@ function balancedBrackets (string) {
       const mostRecentOpen = opensStack.pop();
 
       // open{} is used as a lookup table to find the corresponding closing bracket to mostRecentOpen
-      const correspondingClose = open[mostRecentOpen];
-
-      // if the current closing bracket !== the corresponding closing bracket to mostRecentOpen, return false
-      if (char !== correspondingClose) return false;
+       // if the current closing bracket !== the corresponding closing bracket to mostRecentOpen, return false
+      if (char !== open[mostRecentOpen]) return false;
     }
   }
 
@@ -74,3 +72,5 @@ function balancedBrackets (string) {
 }
 
 console.log(balancedBrackets('text ( is allowed ){rwwrwrrww [] ()}'))
+console.log(balancedBrackets("(){}[]"))
+console.log(balancedBrackets("((]()[))"))
