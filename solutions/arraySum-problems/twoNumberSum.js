@@ -42,8 +42,7 @@ console.log(twoNumberSum([3, 5, -4, 8, 11, 1, -1, 6], 10));
 // time complexity O(n)
 // space complexity O(n)
 function twoNumberSumHash(array, target) {
-  let hash = {},
-    list = [];
+  let hash = {}, list = [];
   for (let i = 0; i < array.length; i++) {
     if (hash[target - array[i]]) list.push(array[i], target - array[i]);
     else hash[array[i]] = true;
